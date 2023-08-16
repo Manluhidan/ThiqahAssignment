@@ -1,0 +1,61 @@
+CREATE DATABASE  IF NOT EXISTS `thiqaproject` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+USE `thiqaproject`;
+-- MySQL dump 10.13  Distrib 8.0.33, for Win64 (x86_64)
+--
+-- Host: localhost    Database: thiqaproject
+-- ------------------------------------------------------
+-- Server version	8.0.33
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!50503 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `students`
+--
+
+DROP TABLE IF EXISTS `students`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `students` (
+  `StudentId` int NOT NULL AUTO_INCREMENT,
+  `Email` varchar(45) NOT NULL,
+  `First_Name` varchar(45) NOT NULL,
+  `Last_Name` varchar(45) NOT NULL,
+  `Password` varchar(255) NOT NULL,
+  `Photo` varchar(255) NOT NULL,
+  `Birthdate` date NOT NULL,
+  `LOS` varchar(45) NOT NULL,
+  `Program` varchar(45) NOT NULL,
+  `Division` varchar(45) NOT NULL,
+  PRIMARY KEY (`StudentId`)
+) ENGINE=InnoDB AUTO_INCREMENT=28 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `students`
+--
+
+LOCK TABLES `students` WRITE;
+/*!40000 ALTER TABLE `students` DISABLE KEYS */;
+INSERT INTO `students` (`StudentId`, `Email`, `First_Name`, `Last_Name`, `Password`, `Photo`, `Birthdate`, `LOS`, `Program`, `Division`) VALUES (1,'Mansour@gmail.com','Mansour','Alluhidan','$2b$10$C7fVk843F0pL1WTc3VmLieq1s3vPYO6ozWWsv2eyTrvxnkPR2r/c6','1691866964902.JPG','2000-04-22','Bachelor\'s level','Information System','Computer and Information Sciences'),(2,'Abdullah@gmail.com','Abdullah','Saleh','$2b$10$LR3MmlxtpQ1QkwjfYUIRUeetYpOp9bfdL9id26MmBUPLP3KIUI3G.','1691869445382.jpg','2000-01-01','Bachelor\'s level','Civil Engineering','Engineering'),(3,'Nawaf@gmail.com','Nawaf','Ahmed','$2b$10$XJAptDNPOWUZ3O799o28V.dR7cpGaeDAM4hawLW7mcCos7adJYPly','1691869585695.png','1997-01-01','Bachelor\'s level','Surgery','Medicine'),(4,'Mohammed@gmail.com','Mohammed','Khalid','$2b$10$Rfw/JO79LjXxr44IpBdSHucNNUxV7rfRc8LnC/5RRmVXSp5d5uoR2','1691869619208.png','2006-01-05','Master\'s level','Information System','Computer and Information Sciences'),(5,'as@gmail.com','aa','aaa','$2b$10$Ha0bBzQhUriILfgLelVg9.igiVgdj/xbr68BEVDvetU/S.nBynMWm','1691869664693.png','2001-12-12','Bachelor\'s level','Computer Science','Computer and Information Sciences'),(6,'das@gmail.com','gg','dss','$2b$10$oifOphm2V8VXFo./lQxBoeM1dNqbIJq9XGsSaEnMYg6jqm8NxkxP2','1691869702299.png','2004-04-22','Bachelor\'s level','Software Engineering','Computer and Information Sciences'),(7,'hjs@gmail.com','dsf','asd','$2b$10$2IMeNNCqu9NgA6mvYTc8zOdC5EoAI5I1czVosZJl7fESNgtiXKOXa','1691870329757.png','1985-05-06','Master\'s level','Information System','Computer and Information Sciences'),(8,'asdh@gmail.com','Khalid','Ahmed','$2b$10$oMRcTNDkDF0PXLHaygpM8ee6DWBfMHNxTKTyZPINFA8k0Xn..OAke','1691870373534.png','2002-06-04','Bachelor\'s level','Finance','Business Administration'),(9,'asdjk@gmail.com','hassan','ahmed','$2b$10$yrIlAsKu.pawssTnyR4rSOaUr8YjI4AFxrbcOsyyNKwPo/5C0ipVS','1691870409687.png','2003-01-06','Diploma\'s Level','Mathematics','Science'),(10,'asjte@gmail.com','Assad','Hamid','$2b$10$ckOWYZN/F300cA7xiFdVd.5qRZoT2OzLQJNsvcPBsNRzAhbArSbWm','1691870454829.png','1991-08-21','Master\'s level','Mechanical Engineering','Engineering'),(11,'asdgec@gmail.com','Saleh','Moussa','$2b$10$EmaFsbk22ECXvpu5n4Zq8u0bjs60fCcPvPW9sqQFtXiSrauDQHRBK','1691870484531.png','2000-04-07','Bachelor\'s level','Mechanical Engineering','Engineering'),(12,'sdkgue@gmail.com','Rabeh','Ali','$2b$10$lVmYim.HEhNmCsg.I4gfKe/cY3p7zopeKkmT/bTNaiNYY6GjuSAmO','1691870526764.png','1999-08-04','Bachelor\'s level','Information Technology','Computer and Information Sciences'),(13,'kfdsue@gmail.com','Hamid','Saeed','$2b$10$U33i1EpoCDtVVF41DHS9deh.gm8E39xofY7riOR/IwRzoXwqOSxzW','1691872422422.png','2005-01-27','Diploma\'s Level','Software Engineering','Computer and Information Sciences'),(14,'ooeriu@gmail.com','Tariq','Hamid','$2b$10$fceMGvm2wLRpwtw32hdMTeipGoZIVDm3LhpUZ4a3sml0SztY9aBNS','1691872457784.png','1998-01-22','Bachelor\'s level','Computer Engineering','Computer and Information Sciences'),(15,'iurf@gmail.com','Khalid','Ziad','$2b$10$6ZzeFKGXwrQ8hYkG1ahKmOKyjAsqegdhKEVm0Md7XfMmm6HmxPfwO','1691872669943.png','2000-08-15','Diploma\'s Level','Management Information Systems','Business Administration'),(16,'AaQah@gmail.com','Amal','Alqahtani','$2b$10$ptsPRptJKjFrgAoCfA3l0.525/8kqwS7jCrN8n5voMefqPv8vhDzK','1691874012959.png','1996-04-04','Diploma\'s Level','Industrial Engineering','Engineering'),(17,'Sarah@gmail.com','Sarah','Alotaibi','$2b$10$rmqx.hnxKUDAQYriIzkTVOj11cbF35uKsXUsfB.v8htKhTf8zvgxC','1691874064222.png','1991-07-21','Master\'s level','Health Administration','Business Administration'),(18,'Khalid@gmail.com','Khalid','Alkathiri','$2b$10$Zxhy2OcajzTDu/hJKDOJue7NR9MC.ZePF9iYU4xv1hAJ6SzKCqet.','1691874117571.png','1994-02-12','Bachelor\'s level','Emergency Medicine','Medicine'),(19,'Norah@gmail.com','Norah','Mohammed','$2b$10$F.FNlCy2MjfrOzEVXmBJIOUtfRmxjWnLnW9fcnZaNWI8yaCWuWniu','1691874193152.png','1997-06-11','Master\'s level','Civil Engineering','Engineering'),(20,'Osama@gmail.com','Osama','Ali','$2b$10$5eqe0vG4.xstPqFJejYDfOEonu6M6YnSEdyivwqGvudH8spowRhGm','1691874246166.png','2003-07-19','Bachelor\'s level','Physics','Science'),(21,'Nnawaf@gmail.com','Nawaf','Fahad','$2b$10$.e0lQ89p/11qAUeHbnE.Kenxz9ge0gJaPakYdLDInR.MvPPnlRuEO','1691874383870.png','2001-12-20','Bachelor\'s level','Accounting','Business Administration'),(22,'FahadS@gmail.com','Fahad','Sami','$2b$10$Wph.dbLDmUXVJNTlgjJ8IOJaI5lvKG2HuIoXRb.HbDbZJt847UgtS','1691874450442.png','1998-06-07','Master\'s level','Public Administration','Business Administration'),(23,'MahaAA@gmail.com','Maha','Ahmad','$2b$10$eRaQ7Fy0BBdrXXd2rHzCNuv5Z6JyTvGO5I1l6irDlAlxasPoidk46','1691874589310.png','1985-05-30','Bachelor\'s level','Computer Engineering','Computer and Information Sciences'),(24,'moha@gmail.com','Mohammed','Fahad','$2b$10$F9zBW71M4RlqKUCKqMdqfO6jEBH5MXqngroIFQhg8Vj612WEXBGLO','1691874628962.png','1996-07-01','Master\'s level','Computer Engineering','Computer and Information Sciences'),(25,'IhaveAPlan@gmail.com','Ziad','Thamer','$2b$10$lFaLHdN0/6tn0yC2cTASj.1ZyDVBYQJEiFWPoY3XU4/R44AyQYOwq','1691874688441.png','1997-12-15','Master\'s level','Health Administration','Business Administration'),(26,'deer@gmail.com','Amal','Mohammed','$2b$10$vIytvls53PKY5izwyYqItu6DaddTQH9LWPT5ZvRb4pn1XL51NSFUa','1691874762744.png','1985-04-13','Master\'s level','Health Administration','Business Administration'),(27,'Rayt@gmail.com','Asma','Aqeel','$2b$10$bkAjm2DjwxP7D05iywhlwONUTf0..flPzkJ9rsF.5M4DaZPCj5ety','1691874817717.png','1995-12-08','Diploma\'s Level','Accounting','Business Administration');
+/*!40000 ALTER TABLE `students` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2023-08-13  1:52:53
